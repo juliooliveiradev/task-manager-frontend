@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Task Manager - Frontend**
 
-## Getting Started
+Este repositório contém o código do frontend do sistema **Task Manager**, desenvolvido com **Next.js** e estilizado com **Tailwind CSS** e **ShadCN**.
 
-First, run the development server:
+---
 
-```bash
+## **Tecnologias Utilizadas**
+- **Next.js**: Framework para renderização no lado do servidor e aplicações React.
+- **React Query**: Gerenciamento de estado e cache de dados.
+- **Tailwind CSS**: Estilização responsiva e utilitária.
+- **ShadCN**: Componentes estilizados e configuráveis.
+- **TypeScript**: Tipagem estática para maior segurança no código.
+
+---
+
+## **Pré-requisitos**
+- **Node.js** (>= 18.18.0 ou superior).
+- **Yarn** ou **npm** para gerenciar pacotes.
+- Backend em execução para conectar o frontend.
+
+---
+
+## **Instalação e Configuração**
+### 1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/task-manager-frontend.git
+   cd task-manager-frontend
+  ```
+
+Instale as dependências:
+````
+npm install
+````
+
+Configure a variável de ambiente para apontar para o backend. Crie um arquivo .env.local na raiz do projeto:
+````
+NEXT_PUBLIC_API_URL=http://localhost:3000
+````
+
+Inicie o servidor de desenvolvimento:
+````
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+````
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O frontend estará disponível em http://localhost:3001.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Estrutura do Projeto
+````
+src/
+├── components/           # Componentes reutilizáveis
+├── pages/                # Páginas e rotas do Next.js
+│   ├── index.tsx         # Página inicial
+├── styles/               # Arquivos de estilo
+│   └── globals.css       # Estilização global com Tailwind CSS
+└── utils/                # Utilitários e helpers
+````
+# Funcionalidades
+- Integração com o backend para gerenciamento de tarefas.
+- Interface responsiva e moderna.
+- Suporte a cache e sincronização de dados com React Query.
+  
+# Como Contribuir
+Faça um fork do repositório.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Crie uma branch para sua feature:
 
-## Learn More
+````
+git checkout -b feature/nova-feature
+````
 
-To learn more about Next.js, take a look at the following resources:
+Faça o commit das alterações:
+````
+git commit -m "Adicionada nova feature"
+````
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Envie para o repositório remoto:
+````
+git push origin feature/nova-feature
+````
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Abra um Pull Request.
 
-## Deploy on Vercel
+# Licença
+Este projeto está licenciado sob a MIT License. Consulte o arquivo LICENSE para mais informações.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
